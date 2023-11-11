@@ -1,0 +1,296 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="msgCarroEstacionadoVagaCarro" xml:space="preserve">
+    <value>Um veículo do tipo Carro foi estacionado na vaga de Carro.
+</value>
+  </data>
+  <data name="msgCarroEstacionadoVagaVan" xml:space="preserve">
+    <value>Um veículo do tipo Carro foi estacionado na vaga de Van.
+</value>
+  </data>
+  <data name="msgCarroRetiradoVagaCarro" xml:space="preserve">
+    <value>Um veículo do tipo Carro foi retirado da vaga de Carro.
+</value>
+  </data>
+  <data name="msgCarroRetiradoVagaVan" xml:space="preserve">
+    <value>Um veículo do tipo Carro foi retirado da vaga de Van.
+</value>
+  </data>
+  <data name="msgConfigurarEstacionamento" xml:space="preserve">
+    <value>Vamos configurar a quantidade de vagas do estacionamento:</value>
+  </data>
+  <data name="msgDigiteNumeroServico" xml:space="preserve">
+    <value>Digite o número do serviço desejado: </value>
+  </data>
+  <data name="msgDivisao" xml:space="preserve">
+    <value>------------------------------------------</value>
+  </data>
+  <data name="msgEstacinamentoCheio" xml:space="preserve">
+    <value>O estacionamento está cheio.
+</value>
+  </data>
+  <data name="msgEstacionamentoPossuiTotal" xml:space="preserve">
+    <value>
+O estacionamento possui um total de {0} vaga(s) (considerando ocupadas e vazias), sendo:"</value>
+  </data>
+  <data name="msgEstacionamentoVazio" xml:space="preserve">
+    <value>*** O estacionamento está vazio</value>
+  </data>
+  <data name="msgEstacionarCarro" xml:space="preserve">
+    <value>2 - Estacionar carro</value>
+  </data>
+  <data name="msgEstacionarMoto" xml:space="preserve">
+    <value>1 - Estacionar moto</value>
+  </data>
+  <data name="msgEstacionarVan" xml:space="preserve">
+    <value>3 - Estacionar van</value>
+  </data>
+  <data name="msgMotoEstacionadaVagaCarro" xml:space="preserve">
+    <value>Um veículo do tipo Moto foi estacionado na vaga de Carro.
+</value>
+  </data>
+  <data name="msgMotoEstacionadaVagaMoto" xml:space="preserve">
+    <value>Um veículo do tipo Moto foi estacionado na vaga de Moto.
+</value>
+  </data>
+  <data name="msgMotoEstacionadaVagaVan" xml:space="preserve">
+    <value>Um veículo do tipo Moto foi estacionado na vaga de Van.
+</value>
+  </data>
+  <data name="msgMotoRetiradaVagaCarro" xml:space="preserve">
+    <value>Um veículo do tipo Moto foi retirado da vaga de Carro.
+</value>
+  </data>
+  <data name="msgMotoRetiradaVagaMoto" xml:space="preserve">
+    <value>Um veículo do tipo Moto foi retirado da vaga de Moto.
+</value>
+  </data>
+  <data name="msgMotoRetiradaVagaVan" xml:space="preserve">
+    <value>Um veículo do tipo Moto foi retirado da vaga de Van.
+</value>
+  </data>
+  <data name="msgNaoHaCarroParaRetirar" xml:space="preserve">
+    <value>Não há veículos do tipo Carro para retirar.
+</value>
+  </data>
+  <data name="msgNaoHaMotoParaRetirar" xml:space="preserve">
+    <value>Não há veículos do tipo Moto para retirar.
+</value>
+  </data>
+  <data name="msgNaoHaVagasCarro" xml:space="preserve">
+    <value>Não há vagas disponíveis para estacionar Carros.
+</value>
+  </data>
+  <data name="msgNaoHaVagasMoto" xml:space="preserve">
+    <value>Não há vagas disponíveis para estacionar Motos.
+</value>
+  </data>
+  <data name="msgNaoHaVagasVan" xml:space="preserve">
+    <value>Não há vagas disponíveis para estacionar Vans.
+</value>
+  </data>
+  <data name="msgNaoHaVanParaRetirar" xml:space="preserve">
+    <value>Não há veículos do tipo Van para retirar.
+</value>
+  </data>
+  <data name="msgObservacaoValidacoes" xml:space="preserve">
+    <value>Observação: Eu não realizei validações para entradas diferentes de números. Não era o objetivo !!
+</value>
+  </data>
+  <data name="msgOps" xml:space="preserve">
+    <value>Ops! Infelizmente eu não realizei validações para entradas diferentes de números.
+</value>
+  </data>
+  <data name="msgQuantasVagasCarros" xml:space="preserve">
+    <value>Quantas vagas para os Carros?</value>
+  </data>
+  <data name="msgQuantasVagasEstacionamento" xml:space="preserve">
+    <value>Quantidade de vagas do estacionamento configurada com sucesso!
+</value>
+  </data>
+  <data name="msgQuantasVagasMotos" xml:space="preserve">
+    <value>Quantas vagas para as Motos?</value>
+  </data>
+  <data name="msgQuantasVagasVans" xml:space="preserve">
+    <value>Quantas vagas para as Vans?</value>
+  </data>
+  <data name="msgRestamVagas" xml:space="preserve">
+    <value>Restam: {0} vaga(s), sendo:</value>
+  </data>
+  <data name="msgRetirarCarro" xml:space="preserve">
+    <value>5 - Retirar carro</value>
+  </data>
+  <data name="msgRetirarMoto" xml:space="preserve">
+    <value>4 - Retirar moto</value>
+  </data>
+  <data name="msgRetirarVan" xml:space="preserve">
+    <value>6 - Retirar Van</value>
+  </data>
+  <data name="msgSelecioneTipoServico" xml:space="preserve">
+    <value>Selecione o tipo de serviço para o estacionamento:
+</value>
+  </data>
+  <data name="msgStatusEstacionamento" xml:space="preserve">
+    <value>
+Status atual do estacionamento:</value>
+  </data>
+  <data name="msgStatusVagasCarro" xml:space="preserve">
+    <value>Vaga(s) de carros: {0} de {1}</value>
+  </data>
+  <data name="msgStatusVagasMoto" xml:space="preserve">
+    <value>Vaga(s) de motos: {0} de {1}</value>
+  </data>
+  <data name="msgStatusVagasVan" xml:space="preserve">
+    <value>Vaga(s) de vans: {0} de {1}
+</value>
+  </data>
+  <data name="msgTriste" xml:space="preserve">
+    <value>='(
+</value>
+  </data>
+  <data name="msgUtilizarOutroServico" xml:space="preserve">
+    <value>Deseja utilizar outro serviço? (1- Sim ou 2- Não)</value>
+  </data>
+  <data name="msgVagasExclusivasCarros" xml:space="preserve">
+    <value>{0} vaga(s) esclusiva(s) de Carro e</value>
+  </data>
+  <data name="msgVagasExclusivasMotos" xml:space="preserve">
+    <value>{0} vaga(s) esclusiva(s) de Moto,</value>
+  </data>
+  <data name="msgVagasExclusivasVans" xml:space="preserve">
+    <value>{0} vaga(s) exclusiva(s) de Van</value>
+  </data>
+  <data name="msgVanEstacionadaVagaCarro" xml:space="preserve">
+    <value>Um veículo do tipo Van foi estacionado na vaga de Carro.
+</value>
+  </data>
+  <data name="msgVanEstacionadaVagaVan" xml:space="preserve">
+    <value>Um veículo do tipo Van foi estacionado na vaga de Van.
+</value>
+  </data>
+  <data name="msgVanRetiradaVagaCarro" xml:space="preserve">
+    <value>Um veículo do tipo Van foi retirado da vaga de Carro.
+</value>
+  </data>
+  <data name="msgVanRetiradaVagaVan" xml:space="preserve">
+    <value>Um veículo do tipo Van foi retirado da vaga de Van.
+</value>
+  </data>
+</root>

@@ -46,41 +46,5 @@ namespace EstacionamentoApp.Model
                 + this.VagasCarro.QuantidadeVagas
                 + this.VagasVan.QuantidadeVagas;
         }
-
-        public void ImprimirLogStatusEstacionamento()
-        {
-            Console.WriteLine("\nStatus atual do estacionamento:");
-            Console.WriteLine($"Vaga(s) de motos: {this.VagasMoto.VagasDisponiveis} de {this.VagasMoto.QuantidadeVagas}");
-            Console.WriteLine($"Vaga(s) de carros: {this.VagasCarro.VagasDisponiveis} de {this.VagasCarro.QuantidadeVagas}");
-            Console.WriteLine($"Vaga(s) de vans: {this.VagasVan.VagasDisponiveis} de {this.VagasVan.QuantidadeVagas}\n");
-            
-            if(this.EstacionamentoVazio())
-                Console.WriteLine($"*** O estacionamento está vazio");
-
-            if (this.EstacionamentoCheio())
-                Console.WriteLine($"*** O estacionamento está cheio");
-
-            Console.WriteLine("------------------------------------------");
-        }
-
-        public void ImprimirLogVagasRestantesEstacionamento()
-        {
-            Console.WriteLine($"Restam: {this.VagasTotaisDisponiveis()} vaga(s), sendo:");
-            Console.WriteLine($"{this.VagasMoto.VagasDisponiveis} vaga(s) esclusiva(s) de Moto, " +
-                              $"{this.VagasCarro.VagasDisponiveis} vaga(s) esclusiva(s) de Carro e " +
-                              $"{this.VagasVan.VagasDisponiveis} vaga(s) exclusiva(s) de Van");
-
-            Console.WriteLine("------------------------------------------\n");
-        }
-
-        public void ImprimirLogQuantidadeVagasEstacionamentoPossui()
-        {
-            Console.WriteLine($"\nO estacionamento possui um total de {this.TotalVagasEstacionamento()} vaga(s) (considerando ocupadas e vazias), sendo:");
-            Console.WriteLine($"{this.VagasMoto.QuantidadeVagas} vaga(s) esclusiva(s) de Moto, " +
-                              $"{this.VagasCarro.QuantidadeVagas} vaga(s) esclusiva(s) de Carro e " +
-                              $"{this.VagasVan.QuantidadeVagas} vaga(s) exclusiva(s) de Van");
-
-            Console.WriteLine("------------------------------------------\n");
-        }
     }
 }

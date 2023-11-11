@@ -1,5 +1,6 @@
 ﻿using EstacionamentoApp.Interfaces;
 using EstacionamentoApp.Model;
+using EstacionamentoApp.Util;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -23,27 +24,27 @@ namespace EstacionamentoApp.Service
             {
                 _estacionamento.VagasMoto.VagasDisponiveis--;
                 _estacionamento.VagasMoto.VeiculosOcupantes.Add(new Moto());
-                Console.WriteLine("Um veículo do tipo Moto foi estacionado na vaga de Moto.\n");
+                Console.WriteLine(Resource.msgMotoEstacionadaVagaMoto);
             }
             else if (_estacionamento.VagasCarro.VagasDisponiveis > 0)
             {
                 _estacionamento.VagasCarro.VagasDisponiveis--;
                 _estacionamento.VagasCarro.VeiculosOcupantes.Add(new Moto());
-                Console.WriteLine("Um veículo do tipo Moto foi estacionado na vaga de Carro.\n");
+                Console.WriteLine(Resource.msgMotoEstacionadaVagaCarro);
             }
             else if (_estacionamento.VagasVan.VagasDisponiveis > 0)
             {
                 _estacionamento.VagasVan.VagasDisponiveis--;
                 _estacionamento.VagasVan.VeiculosOcupantes.Add(new Moto());
-                Console.WriteLine("Um veículo do tipo Moto foi estacionado na vaga de Van.\n");
+                Console.WriteLine(Resource.msgMotoEstacionadaVagaVan);
             }
             else
-                Console.WriteLine("Não há vagas disponíveis para estacionar Motos.\n");
+                Console.WriteLine(Resource.msgNaoHaVagasMoto);
 
             if (_estacionamento.EstacionamentoCheio())
-                Console.WriteLine("O estacionamento está cheio\n");
+                Console.WriteLine(Resource.msgEstacinamentoCheio);
 
-            _estacionamento.ImprimirLogStatusEstacionamento();
+            LogFluxoControleExecucao.ImprimirLogStatusEstacionamento(_estacionamento);
         }
 
         public void RetirarVeiculoServico()
@@ -53,28 +54,28 @@ namespace EstacionamentoApp.Service
                 Veiculo motoToRemove = _estacionamento.VagasVan.VeiculosOcupantes.First(veiculo => veiculo is Moto);
                 _estacionamento.VagasVan.VeiculosOcupantes.Remove(motoToRemove);
                 _estacionamento.VagasVan.VagasDisponiveis++;
-                Console.WriteLine("Um veículo do tipo Moto foi retirado da vaga de Van.\n");
+                Console.WriteLine(Resource.msgMotoRetiradaVagaVan);
             }
             else if (_estacionamento.VagasCarro.VeiculosOcupantes.Any(veiculo => veiculo is Moto))
             {
                 Veiculo motoToRemove = _estacionamento.VagasCarro.VeiculosOcupantes.First(veiculo => veiculo is Moto);
                 _estacionamento.VagasCarro.VeiculosOcupantes.Remove(motoToRemove);
                 _estacionamento.VagasCarro.VagasDisponiveis++;
-                Console.WriteLine("Um veículo do tipo Moto foi retirado da vaga de Carro.\n");
+                Console.WriteLine(Resource.msgMotoRetiradaVagaCarro);
             }
             else if (_estacionamento.VagasMoto.VeiculosOcupantes.Any(veiculo => veiculo is Moto))
             {
                 Veiculo motoToRemove = _estacionamento.VagasMoto.VeiculosOcupantes.First(veiculo => veiculo is Moto);
                 _estacionamento.VagasMoto.VeiculosOcupantes.Remove(motoToRemove);
                 _estacionamento.VagasMoto.VagasDisponiveis++;
-                Console.WriteLine("Um veículo do tipo Moto foi retirado da vaga de Moto.\n");
+                Console.WriteLine(Resource.msgMotoRetiradaVagaMoto);
             }
             else
             {
-                Console.WriteLine("Não há veículos do tipo Moto para retirar.\n");
+                Console.WriteLine(Resource.msgNaoHaMotoParaRetirar);
             }
 
-            _estacionamento.ImprimirLogStatusEstacionamento();
+            LogFluxoControleExecucao.ImprimirLogStatusEstacionamento(_estacionamento);
         }
     }
 }
